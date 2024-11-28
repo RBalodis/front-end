@@ -12,11 +12,11 @@ function CardList({ characters }: CardListProps) {
 
   return (
     <>
-      <div className="flex flex-wrap justify-between gap-4">
+      <div className="flex flex-row flex-wrap gap-4 p-4">
         {characters.map((character) => (
           <div 
             key={character.id} 
-            className="w-[23%] min-w-[250px] cursor-pointer"
+            className="w-[300px] cursor-pointer"
             onClick={() => setSelectedCharacter(character)}
           >
             <CharacterCard character={character} />

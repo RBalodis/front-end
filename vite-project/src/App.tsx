@@ -19,11 +19,9 @@ function App() {
   }, [])
 
   return (
-    <>
-      <div>
-        <CardList characters={characters}/>
-      </div>
-    </>
+    <div className="max-w-[1200px] mx-auto">
+      <CardList characters={characters}/>
+    </div>
   )
 }
 export default App
